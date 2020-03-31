@@ -22,7 +22,7 @@ class Conan(ConanFile):
     
     def requirements(self):
         self.requires("freetype/2.10.1#0b3e6d785894831578678a6071b8b51e99eb58ff")
-        self.requires("sdl2/2.0.8#ecad87bc0bf63f851560e29d3b2e0d1881051544")
+        self.requires("sdl2/2.0.12")
 
     def source(self):
         tools.get(f"https://www.libsdl.org/projects/SDL_ttf/release/{self.zip_name}")
